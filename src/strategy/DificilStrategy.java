@@ -1,0 +1,58 @@
+package strategy;
+
+/**
+ * Clase que implementa la estrategia de dificultad "Difícil" para el juego de buscaminas.
+ * Define un tablero de 16 filas, 30 columnas y 99 minas.
+ */
+public class DificilStrategy implements DificultadStrategy 
+{
+    /**
+     * Obtiene la cantidad de filas del tablero para la dificultad "Difícil".
+     *
+     * @return número de filas
+     */
+    public int getFilas() 
+    { 
+        return 16; 
+    }
+
+    /**
+     * Obtiene la cantidad de columnas del tablero para la dificultad "Difícil".
+     *
+     * @return número de columnas
+     */
+    public int getColumnas() 
+    { 
+        return 30; 
+    }
+
+    /**
+     * Obtiene la cantidad de minas del tablero para la dificultad "Difícil".
+     *
+     * @return número de minas
+     */
+    public int getConteoMinas() 
+    { 
+        return 99; 
+    }
+
+    /**
+     * Obtiene el nombre de la dificultad.
+     *
+     * @return nombre de la dificultad
+     */
+    public String getNombre() 
+    { 
+        return "Difícil"; 
+    }
+
+    /**
+     * Devuelve una representación en cadena de la dificultad.
+     *
+     * @return nombre de la dificultad
+     */
+    @Override public String toString() 
+    { 
+        return getNombre(); 
+    }
+}
